@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+    <import name="xobjects"        class="java.util.ArrayList" />
+    <import name="signaturer"      class="org.hy.common.license.Hash" />
+    
+    
+    
+    <xobjects>
+    
+        <signaturer id="MS_Token_YonYou_Signaturer">
+            <constructor>
+                <int>2</int>
+                <int>1</int>
+                <String encrypt="org.hy.common.StringHelp"></String>
+            </constructor>
+        </signaturer>
+        
+    </xobjects>
+
+</config>

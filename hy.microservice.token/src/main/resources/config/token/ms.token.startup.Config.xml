@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+    <import name="xconfig"         class="java.util.ArrayList" />
+    <import name="startupConfig"   class="java.util.ArrayList" />
+    <import name="item"            class="org.hy.common.app.Param" />
+    
+    
+    
+    <!-- 启动加载XML配置信息的列表 -->
+    <xconfig>
+        
+        <startupConfig id="StartupConfig_MS_Token">
+        
+            <item>
+                <value>config/token/ms.token.XSSO.xml</value>
+            </item>
+            
+            <!-- 加载数据库目录所有配置文件 -->
+            <item>
+                <value>config/yonyou/</value>
+            </item>
+            
+        </startupConfig>
+        
+    </xconfig>
+    
+</config>

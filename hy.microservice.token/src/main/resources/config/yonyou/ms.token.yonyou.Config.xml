@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+    <import name="xconfig"         class="java.util.ArrayList" />
+    <import name="xparam"          class="java.util.Hashtable" />
+    <import name="item"            class="org.hy.common.app.Param" />
+    
+    
+    
+    <!-- 系统配置参数信息 -->
+    <xconfig>
+    
+        <item id="MS_Token_YonYou_AppKey">
+            <name>MS_Token_YonYou_AppKey</name>
+            <value></value>
+            <comment>用友.单点登录的AppKey</comment>
+        </item>
+        
+        <item id="MS_Token_YonYou_ThirdUcId">
+            <name>MS_Token_YonYou_ThirdUcId</name>
+            <value></value>
+            <comment>用友.单点登录的在友户通注册的唯一标识，从友户通集成认证中心页面获取</comment>
+        </item>
+        
+    </xconfig>
+    
+</config>
