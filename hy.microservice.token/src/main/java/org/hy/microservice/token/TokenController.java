@@ -58,7 +58,7 @@ public class TokenController
      */
     @RequestMapping(value="yonyou" ,produces=MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public BaseResponse<String> register(@RequestParam(value="token" ,required=false) String i_Token)
+    public BaseResponse<String> yonyou(@RequestParam(value="token" ,required=false) String i_Token)
     {
         BaseResponse<String> v_RetResp = new BaseResponse<String>();
         
