@@ -206,4 +206,45 @@ public class YonYouApi
         return null;
     }
     
+    
+    
+    /**
+     * 通过用友的工号，生成用友单点登录的链接
+     * 
+     * @author      ZhengWei(HY)
+     * @createDate  2020-12-23
+     * @version     v1.0
+     *
+     * @param i_UserNo   用友的工号
+     * @param i_UserName 用户名称（只用于显示）
+     * @return
+     */
+    public String makeSSOLoginUrl(String i_UserNo ,String i_UserName)
+    {
+        if ( Help.isNull(i_UserNo) )
+        {
+            return null;
+        }
+        
+        String v_TokenID = this.getTokenID();
+        if ( Help.isNull(v_TokenID) )
+        {
+            return null;
+        }
+        
+        String v_Code = this.getLoginCode(v_TokenID ,i_UserNo);
+        if ( Help.isNull(v_Code) )
+        {
+            return null;
+        }
+        
+        String v_Url = "https://euc.diwork.com/cas/thirdOauth2CodeLogin?thirdUCId=" + this.thirdUcId.getValue() 
+                     + "&code=" + v_Code 
+                     + "&service=https%3A%2F%2Fyonsuite.diwork.com%2Flogin";
+        
+        $Logger.info("用户" + i_UserNo + i_UserName +  "的用友单点登录地址：" + v_Url);
+        
+        return v_Url;
+    }
+    
 }

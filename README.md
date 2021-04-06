@@ -5,4 +5,5 @@
 
 # 用友的票据
 -----
-http://127.0.0.1/msToken/token/yonyou
+用友票据获取 http://127.0.0.1/msToken/yonyou/token
+用友单点登录 http://127.0.0.1/msToken/yonyou/open

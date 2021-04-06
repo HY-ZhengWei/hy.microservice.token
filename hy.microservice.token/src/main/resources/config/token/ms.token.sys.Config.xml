@@ -15,7 +15,7 @@
             
             <item id="MS_Token_Analyses_Password">
                 <name>MS_Token_Analyses_Password</name>
-                <value encrypt="org.hy.common.StringHelp">mstokens</value>
+                <value encrypt="org.hy.common.StringHelp">mstoken</value>
                 <comment>分析中心的访问密码</comment>
             </item>
             
