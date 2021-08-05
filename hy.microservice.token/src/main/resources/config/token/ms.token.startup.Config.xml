@@ -22,6 +22,10 @@
                 <value>config/yonyou/</value>
             </item>
             
+            <item>
+                <value>config/weixin/</value>
+            </item>
+            
         </startupConfig>
         
     </xconfig>

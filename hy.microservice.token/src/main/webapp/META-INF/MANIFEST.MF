@@ -1,6 +1,6 @@
-Manifest-Version: 1.0.0
+Manifest-Version: 1.0.1
 Created-By: HY.ZhengWei@qq.com  2021
-Specification-Version: 1.0.0  2021-04-01
+Specification-Version: 1.0.0  2021-08-05
 SourceCode: https://github.com/HY-ZhengWei/hy.microservice.token
-SourceCode: https://gitee.com/HY-ZhengWei/hy.microservice.token
+SourceCodeChina: https://gitee.com/HY-ZhengWei/hy.microservice.token
 Build-JDK: 1.8

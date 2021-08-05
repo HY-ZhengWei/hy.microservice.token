@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+    <import name="xconfig"         class="java.util.ArrayList" />
+    <import name="xparam"          class="java.util.Hashtable" />
+    <import name="item"            class="org.hy.common.app.Param" />
+    
+    
+    
+    <!-- 微信小程的配置参数信息 -->
+    <xconfig>
+    
+        <item id="MS_Token_WeiXin_AppID">
+            <name>MS_Token_WeiXin_AppID</name>
+            <value encrypt="org.hy.common.StringHelp"> </value>
+            <comment>微信.小程序的AppID</comment>
+        </item>
+        
+        <item id="MS_Token_WeiXin_AppSecret">
+            <name>MS_Token_WeiXin_AppSecret</name>
+            <value encrypt="org.hy.common.StringHelp"> </value>
+            <comment>微信.小程序的AppSecret</comment>
+        </item>
+        
+    </xconfig>
+    
+</config>

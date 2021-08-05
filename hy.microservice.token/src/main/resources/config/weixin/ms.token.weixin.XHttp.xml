@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+
+    <import name="xobjects"        class="java.util.ArrayList" />
+    <import name="http"            class="org.hy.common.xml.XHttp" />
+    <import name="xparam"          class="org.hy.common.app.Param" />
+    
+    
+    
+    <xobjects>
+    
+        <!-- 获取 OpenID -->
+        <http id="MS_Token_WeiXin_XHTTP_GetOpenID">
+            <protocol>https</protocol>
+            <ip>api.weixin.qq.com</ip>
+            <url><![CDATA[/sns/jscode2session?grant_type=authorization_code&connect_redirect=1]]></url>
+            <contentType>application/json</contentType> <!-- text/html -->
+            <requestType ref="this.$Request_Type_Get" />
+            <encode>false</encode>
+            <toUnicode>false</toUnicode>
+            
+            <addParam>
+                <paramName>appid</paramName>
+                <paramValue ref="MS_Token_WeiXin_AppID.getValue" />
+            </addParam>
+            
+            <addParam>
+                <paramName>secret</paramName>
+                <paramValue ref="MS_Token_WeiXin_AppSecret" />
+            </addParam>
+            
+            <addParam>
+                <paramName>js_code</paramName>
+            </addParam>
+        </http>
+        
+    </xobjects>
+
+</config>
