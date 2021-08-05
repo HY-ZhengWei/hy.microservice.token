@@ -53,9 +53,9 @@ public class WeiXinController
      */
     @RequestMapping(value="openID" ,produces=MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public BaseResponse<OpenIDResponseData> getOpenID(@RequestParam(value="code" ,required=false) String i_Code)
+    public BaseResponse<String> getOpenID(@RequestParam(value="code" ,required=false) String i_Code)
     {
-        BaseResponse<OpenIDResponseData> v_RetResp = new BaseResponse<OpenIDResponseData>();
+        BaseResponse<String> v_RetResp = new BaseResponse<String>();
         
         Map<String ,Object> v_ReqParams = new HashMap<String ,Object>();
         v_ReqParams.put("js_code" ,i_Code);
@@ -73,7 +73,7 @@ public class WeiXinController
                     v_XJson.setReturnNVL(false);
                     
                     OpenIDResponseData v_Data = (OpenIDResponseData)v_XJson.toJava(v_Ret.getParamStr() ,OpenIDResponseData.class);
-                    return v_RetResp.setData(v_Data);
+                    return v_RetResp.setData(v_Data.getOpenid());
                 }
                 else
                 {
